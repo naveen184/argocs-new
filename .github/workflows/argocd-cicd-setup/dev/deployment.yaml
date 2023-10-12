@@ -1,9 +1,9 @@
----
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-custom-container
-  namespace: argocd
+  namespace: my-app
 spec:
   replicas: 2
   selector:
@@ -17,6 +17,6 @@ spec:
       containers:
         - name: my-container
           imagePullPolicy: Always
-          image: ravindrasingh6969/my-app:latest
+          image: telus121/my-app:latest
           ports:
             - containerPort: 80
