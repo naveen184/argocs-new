@@ -35,4 +35,4 @@ jobs:
         with:
           repository: naveen184/argocs-new
           ref: 'master'
-          token: ${{ secrets.G-token }}
+          token: ${{ secrets.G_token }}
