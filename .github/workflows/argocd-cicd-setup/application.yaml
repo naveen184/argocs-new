@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: 
     targetRevision: HEAD
-    path: environments/dev/my-app
+    path: .github/workflows/argocd-cicd-setup/dev/
   destination:
     server: https://kubernetes.default.svc
     namespace: my-app
