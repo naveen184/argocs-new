@@ -7,7 +7,7 @@ on:
         description: Make a choice
         options: 
           - dev 
-          - qa 
+          - master
           - stage 
           - prod 
 
