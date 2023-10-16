@@ -16,6 +16,6 @@ spec:
       containers:
         - name: my-container
           imagePullPolicy: Always
-          image: telus121/my-app:latest
+          image: 779372627864.dkr.ecr.ap-south-1.amazonaws.com/mean-demo:latest
           ports:
             - containerPort: 80
