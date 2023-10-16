@@ -1,10 +1,16 @@
-name: Deploy to Kubernetes
-
+name: Deploy to ECR
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+  workflow_dispatch: 
+    inputs: 
+      env: 
+        type: choice 
+        description: Make a choice
+        options: 
+          - dev 
+          - qa 
+          - stage 
+          - prod 
+
 
 env:
   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
