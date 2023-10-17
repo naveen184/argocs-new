@@ -15,7 +15,7 @@ spec:
     path: .github/workflows/argocd-cicd-setup/dev/
   destination:
     server: https://kubernetes.default.svc
-    namespace: my-app
+    namespace: argocd
   syncPolicy:
     automated:
       prune: true
