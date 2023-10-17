@@ -17,7 +17,7 @@ spec:
   sourceRepos:
   - '*'
   destinations:
-  - namespace: argocd
+  - namespace: my-app
     server: https://kubernetes.default.svc
   # Deny all cluster-scoped resources from being created, except for Namespace
   clusterResourceWhitelist:
