@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_naveen184_argocs_new_1700743391196-push-trigger-input-set
+  identifier: Build_naveen184_argocs_new_1700743391196pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: demo_project
+  pipeline:
+    identifier: Build_naveen184_argocs_new_1700743391196
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
