@@ -7,17 +7,13 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
   # Project description
   description: Learning CICD
   # Allow manifests to deploy from any Git repos
   sourceRepos:
   - '*'
   destinations:
-  - namespace: argocd
+  - namespace: my-app
     server: https://kubernetes.default.svc
   # Deny all cluster-scoped resources from being created, except for Namespace
   clusterResourceWhitelist:

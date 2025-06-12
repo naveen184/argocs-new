@@ -1,11 +1,11 @@
-
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: my-custom-container
   namespace: argocd
 spec:
-  replicas: 1  
+  replicas: 2
   selector:
     matchLabels:
       app: nginx
@@ -17,6 +17,6 @@ spec:
       containers:
         - name: my-container
           imagePullPolicy: Always
-          image: 779372627864.dkr.ecr.ap-south-1.amazonaws.com/mean-demo:latest
+          image: naveen184/my-app:latest
           ports:
             - containerPort: 80

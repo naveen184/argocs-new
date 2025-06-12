@@ -10,12 +10,12 @@ metadata:
 spec:
   project: my-app-project
   source:
-    repoURL: 
+    repoURL: git@github.com:naveen184/argocs-new.git
     targetRevision: HEAD
-    path: .github/workflows/argocd-cicd-setup/dev/
+    path: argocd-cicd-setup/dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: my-app
   syncPolicy:
     automated:
       prune: true
